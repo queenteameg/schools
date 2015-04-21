@@ -10,7 +10,7 @@ use yii\bootstrap\NavBar;
 AppAsset::register($this);
 ?>
 
-<header class="header">
+<header class="main-header">
 
 <?= Html::a(Yii::$app->name, Yii::$app->homeUrl, ['class' => 'logo']) ?>
 
@@ -227,8 +227,8 @@ AppAsset::register($this);
 <?php
 if (Yii::$app->user->isGuest) {
     ?>
-    <li class="footer">
-        <?= Html::a('Login', ['/site/login']) ?>
+    <li class="">
+        <?= Html::a('Login', ['/user-management/auth/login']) ?>
     </li>
 <?php
 } else {

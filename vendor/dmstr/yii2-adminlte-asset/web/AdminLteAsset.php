@@ -12,7 +12,7 @@ class AdminLteAsset extends AssetBundle
     public $sourcePath = '@bower/admin-lte/dist';
     public $css = [
         'css/AdminLTE.min.css',
-        'css/skins/_all-skins.min.css'
+        'css/skins/_all-skins.css'
     ];
     public $js = [
         'js/app.min.js'
